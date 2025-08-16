@@ -22,22 +22,28 @@ let package = Package(
   products: [
     .library(
       name: "IronSourceAdapterTarget",
-      targets: ["IronSourceAdapterTarget"]
+      targets: ["IronSourceAdapterTarget", "IronSourceSDK"]
     )
   ],
   targets: [
     .target(
       name: "IronSourceAdapterTarget",
       dependencies: [
-        .target(name: "Adapter")
+        .target(name: "IronSourceAdapter")
       ],
       path: "IronSourceAdapterTarget"
     ),
     .binaryTarget(
-      name: "Adapter",
+      name: "IronSourceAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/ironsource/IronSourceAdapter-8.10.0.0.0.zip",
-      checksum: ""
+      checksum: "6076e68ab3e5851253301f2f4a8ff5c20d71ede2e6cb2f3b9b214eb8053d73fd"
+    ),
+    .binaryTarget(
+      name: "IronSourceSDK",
+      url:
+        "https://github.com/ironsource-mobile/iOS-sdk/raw/master/8.10.0/IronSource8.10.0.zip",
+      checksum: "75f6acb4803e3c4574be3fd5a2fdeff9e0c33526bb37e772153d2c5df5141c49"
     ),
   ]
 )
