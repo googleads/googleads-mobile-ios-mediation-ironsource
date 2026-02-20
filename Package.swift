@@ -18,7 +18,7 @@ import PackageDescription
 
 let package = Package(
   name: "IronSourceAdapter",
-  platforms: [.iOS(.v12)],
+  platforms: [.iOS(.v13)],
   products: [
     .library(
       name: "IronSourceAdapterTarget",
@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-      from: "12.0.0"
+      from: "13.0.0"
     )
   ],
   targets: [
@@ -43,14 +43,14 @@ let package = Package(
     .binaryTarget(
       name: "IronSourceAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/ironsource/IronSourceAdapter-8.10.0.0.0.zip",
-      checksum: "6076e68ab3e5851253301f2f4a8ff5c20d71ede2e6cb2f3b9b214eb8053d73fd"
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/ironsource/IronSourceAdapter-9.3.0.0.1.zip",
+      checksum: "a3246163d054530ed7e1dc6caacf73d49704d30abe047661c02a4056b41b889c"
     ),
     .binaryTarget(
       name: "IronSourceSDK",
       url:
-        "https://github.com/ironsource-mobile/iOS-sdk/raw/master/8.10.0/IronSource8.10.0.zip",
-      checksum: "75f6acb4803e3c4574be3fd5a2fdeff9e0c33526bb37e772153d2c5df5141c49"
+        "https://github.com/ironsource-mobile/iOS-sdk/raw/master/9.3.0/IronSource9.3.0.zip",
+      checksum: "75fae872f775618fce52c47716856876684df6908710f6098c38337e2a22c100"
     ),
   ]
 )
