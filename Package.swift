@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 
 // Copyright 2025 Google LLC.
 //
@@ -22,10 +22,14 @@ let package = Package(
   products: [
     .library(
       name: "IronSourceAdapterTarget",
-      targets: ["IronSourceAdapterTarget", "IronSourceSDK"]
+      targets: ["IronSourceAdapterTarget"]
     )
   ],
   dependencies: [
+    .package(
+      url: "https://github.com/ironsource-mobile/Unity-Mediation-iAds-Swift-Package.git",
+      exact: "9.3.0"
+    ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
       from: "13.0.0"
@@ -36,6 +40,7 @@ let package = Package(
       name: "IronSourceAdapterTarget",
       dependencies: [
         .target(name: "IronSourceAdapter"),
+        .product(name: "UnityMediationSDK", package: "Unity-Mediation-iAds-Swift-Package"),
         .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
       ],
       path: "IronSourceAdapterTarget"
@@ -45,12 +50,6 @@ let package = Package(
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/ironsource/IronSourceAdapter-9.3.0.0.1.zip",
       checksum: "a3246163d054530ed7e1dc6caacf73d49704d30abe047661c02a4056b41b889c"
-    ),
-    .binaryTarget(
-      name: "IronSourceSDK",
-      url:
-        "https://github.com/ironsource-mobile/iOS-sdk/raw/master/9.3.0/IronSource9.3.0.zip",
-      checksum: "75fae872f775618fce52c47716856876684df6908710f6098c38337e2a22c100"
-    ),
+    )
   ]
 )
