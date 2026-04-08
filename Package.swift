@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "IronSourceAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/ironsource/IronSourceAdapter-9.3.0.0.1.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/ironsource/IronSourceAdapter-9.4.0.0.0.zip",
       checksum: "a3246163d054530ed7e1dc6caacf73d49704d30abe047661c02a4056b41b889c"
     )
   ]
