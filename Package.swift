@@ -32,8 +32,8 @@ let package = Package(
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-      from: "13.0.0"
-    )
+      from: "13.3.0"
+    ),
   ],
   targets: [
     .target(
@@ -50,6 +50,6 @@ let package = Package(
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/ironsource/IronSourceAdapter-9.4.1.0.0.zip",
       checksum: "8b41d93c58ea015fc9e5dba89f9053e3f97d21345d3e820e6927fd85772dcc60"
-    )
+    ),
   ]
 )
