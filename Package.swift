@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/ironsource-mobile/Unity-Mediation-iAds-Swift-Package.git",
-      exact: "9.6.0"
+      exact: "9.6.1"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -49,7 +49,7 @@ let package = Package(
       name: "IronSourceAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/ironsource/IronSourceAdapter-9.6.1.0.0.zip",
-      checksum: "bc4c217a73974fd9b0aae7c07f27222c15b9471eccfa6f723d7b5e78074d8bc7"
+      checksum: "eaafc40533f7e49c5abe332cbc25829c6107e92b43b7227d636ced496765fa02"
     ),
   ]
 )
