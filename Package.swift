@@ -49,7 +49,7 @@ let package = Package(
       name: "IronSourceAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/ironsource/IronSourceAdapter-9.7.0.0.0.zip",
-      checksum: "eaafc40533f7e49c5abe332cbc25829c6107e92b43b7227d636ced496765fa02"
+      checksum: "5043a205e475c9752115646c819899923e425f5b3c80331fe119ca97c438911b"
     ),
   ]
 )
